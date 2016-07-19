@@ -1,4 +1,4 @@
-package pl.lodz.p.dmcs.calculator;
+package pl.lodz.p.dmcs.calculator.activities;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import java.math.BigDecimal;
 
+import pl.lodz.p.dmcs.calculator.R;
 import pl.lodz.p.dmcs.calculator.commons.ResultParser;
 
 /**

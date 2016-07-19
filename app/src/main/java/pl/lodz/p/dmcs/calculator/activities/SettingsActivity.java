@@ -1,4 +1,4 @@
-package pl.lodz.p.dmcs.calculator;
+package pl.lodz.p.dmcs.calculator.activities;
 
 import android.app.Activity;
 import android.media.AudioManager;
@@ -7,6 +7,8 @@ import android.widget.CompoundButton;
 import android.widget.RadioGroup;
 import android.widget.Switch;
 import android.widget.TextView;
+
+import pl.lodz.p.dmcs.calculator.R;
 
 /**
  * @author Mateusz Wieczorek
@@ -75,11 +77,11 @@ public class SettingsActivity extends Activity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    //TODO włączyć dzwięki klwiszy
+                    //TODO włączyć dzwięki klawiszy
                     soundSwitch.setChecked(true);
                     soundStatus = true;
                 } else {
-                    //TODO wyłączyć dzwięki klwiszy
+                    //TODO wyłączyć dzwięki klawiszy
                     soundSwitch.setChecked(false);
                     soundStatus = false;
                 }

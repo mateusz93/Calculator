@@ -1,4 +1,4 @@
-package pl.lodz.p.dmcs.calculator;
+package pl.lodz.p.dmcs.calculator.activities;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import java.math.BigDecimal;
 
+import pl.lodz.p.dmcs.calculator.R;
 import pl.lodz.p.dmcs.calculator.commons.MathUtils;
 import pl.lodz.p.dmcs.calculator.commons.ResultParser;
 
@@ -447,7 +448,7 @@ public class AdvancedActivity extends Activity {
             public void onClick(View v) {
                 Vibrator vb = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
                 vb.vibrate(30);
-                BigDecimal number, resultNumber, restOfNumber;
+                BigDecimal number, resultNumber;
                 switch (operation) {
                     case "*":
                         number = new BigDecimal(result.getText().toString());
