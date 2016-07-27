@@ -92,28 +92,33 @@
                 android:id="@+id/languageRadioGroup"
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:baselineAligned="false">
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/polish"
                     android:id="@+id/polishRadioButton"
-                    android:textColor="#000000"
+                    android:textColor="@android:color/white"
                     android:layout_weight="1"
                     android:textAlignment="center"
-                    android:background="#ffffff"
-                    android:allowUndo="false" />
+                    android:background="@android:color/black"
+                    android:textColorHint="@android:color/white"
+                    android:textColorLink="@android:color/white"
+                    android:textColorHighlight="@android:color/white"
+                    android:buttonTint="@android:color/white" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/english"
                     android:id="@+id/englishRadioButton"
-                    android:textColor="#000000"
+                    android:textColor="@android:color/white"
                     android:layout_weight="1"
                     android:textAlignment="center"
-                    android:background="#ffffff" />
+                    android:background="@android:color/black"
+                    android:buttonTint="@android:color/white" />
             </RadioGroup>
         </LinearLayout>
 
